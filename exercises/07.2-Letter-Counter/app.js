@@ -2,5 +2,18 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+for (i = 0; i <par.length; i++){
+    let letter = par[i];
+    if (letter != " "){
+
+        if(letter in counts ){
+            counts[letter] +=1;
+            
+        } else {
+            counts[letter]=1;
+        }
+    }
+
+}
 
 console.log(counts);
