@@ -4,11 +4,9 @@ function deletePerson(personName)
 {
     let newArray= [];
 	for(var name of people){
-        if (name == 'daniella' || name == 'juan' || name == 'emilio' ){
-            people.pop(name);
-        } else {
-            newArray.push(name);
-        }
+        if (name !== personName ){
+            newArray.push(name)
+        } 
     } 
     return newArray;
 } 
