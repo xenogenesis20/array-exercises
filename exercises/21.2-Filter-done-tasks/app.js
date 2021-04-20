@@ -10,3 +10,6 @@ let tasks = [
 ];
 
 //your code here
+
+let notDone = tasks.filter(task => task["done"] == false)
+console.log(notDone);
